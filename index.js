@@ -3,10 +3,27 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+const data ={
+    "id": "abc123",
+    "name": "AAA 000",
+    "imei": "123456789123",
+    "vehicle_params": {
+        "vin": null,
+        "make": null,
+        "model": null,
+          "plate_number": null
+    }
+}
+
 app.get('/', (req, res) => {
   res.send('fuck World!')
 })
 
 app.listen(process.env.port, () => {
   console.log(`Example app listening on port ${port}`)
+})
+
+app.get('/github',(req,res)=>
+{
+    res.json(data);
 })
