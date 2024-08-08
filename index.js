@@ -23,6 +23,9 @@ app.listen(process.env.port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
+app.get('/youtube',(res,req)=>{
+    res.send('i will work hard for you');
+})
 app.get('/github',(req,res)=>
 {
     res.json(data);
