@@ -16,7 +16,7 @@ const data ={
 }
 
 app.get('/', (req, res) => {
-  res.send('fuck World!')
+  res.send('Ruck World!')
 })
 
 app.listen(process.env.port, () => {
