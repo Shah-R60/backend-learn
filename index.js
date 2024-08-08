@@ -16,7 +16,7 @@ const data ={
 }
 
 app.get('/', (req, res) => {
-  res.send('i want to say that')
+  res.send('i want to say lalalalala that')
 })
 
 app.listen(process.env.port, () => {
